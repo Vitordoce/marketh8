@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Calculadora Científica",
+    "price": 50.0,
+    "images": ["https://example.com/images/products/calculadora1.jpg"],
+    "condition": "Usado",
+    "category": "Eletrônicos",
+    "user_id": 1
+  },
+  {
+    "id": 2,
+    "name": "Notebook Dell",
+    "price": 2000.0,
+    "images": ["https://example.com/images/products/notebook.jpg"],
+    "condition": "Usado",
+    "category": "Eletrônicos",
+    "user_id": 1
+  },
+  {
+    "id": 3,
+    "name": "Livro de Cálculo",
+    "price": 80.0,
+    "images": ["https://example.com/images/products/livro_calculo.jpg"],
+    "condition": "Novo",
+    "category": "Livros",
+    "user_id": 2
+  },
+  {
+    "id": 4,
+    "name": "Mesa de Estudo",
+    "price": 150.0,
+    "images": ["https://example.com/images/products/mesa.jpg"],
+    "condition": "Usado",
+    "category": "Móveis",
+    "user_id": 2
+  },
+  {
+    "id": 5,
+    "name": "Mochila Escolar",
+    "price": 120.0,
+    "images": ["https://example.com/images/products/mochila.jpg"],
+    "condition": "Novo",
+    "category": "Acessórios",
+    "user_id": 3
+  },
+  {
+    "id": 6,
+    "name": "Tênis Nike",
+    "price": 300.0,
+    "images": ["https://example.com/images/products/tenis.jpg"],
+    "condition": "Usado",
+    "category": "Esportes",
+    "user_id": 3
+  },
+  {
+    "id": 7,
+    "name": "Kindle Paperwhite",
+    "price": 450.0,
+    "images": ["https://example.com/images/products/kindle.jpg"],
+    "condition": "Usado",
+    "category": "Eletrônicos",
+    "user_id": 4
+  },
+  {
+    "id": 8,
+    "name": "Livro: Design para Todos",
+    "price": 60.0,
+    "images": ["https://example.com/images/products/livro_design.jpg"],
+    "condition": "Novo",
+    "category": "Livros",
+    "user_id": 4
+  },
+  {
+    "id": 9,
+    "name": "Cadeira Gamer",
+    "price": 700.0,
+    "images": ["https://example.com/images/products/cadeira.jpg"],
+    "condition": "Usado",
+    "category": "Móveis",
+    "user_id": 1
+  },
+  {
+    "id": 10,
+    "name": "Fone de Ouvido Bluetooth",
+    "price": 200.0,
+    "images": ["https://example.com/images/products/fone.jpg"],
+    "condition": "Novo",
+    "category": "Eletrônicos",
+    "user_id": 2
+  }
+]

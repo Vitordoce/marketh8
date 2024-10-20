@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "João Silva",
+    "turma": "Engenharia 2024",
+    "contact": "joao.silva@example.com",
+    "address": "Rua dos Estudantes, 123, São Paulo, SP",
+    "email": "joao.silva@example.com",
+    "password": "hashed_password123",
+    "photo": "https://example.com/images/users/joao.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Maria Oliveira",
+    "turma": "Administração 2025",
+    "contact": "maria.oliveira@example.com",
+    "address": "Avenida Central, 456, Campinas, SP",
+    "email": "maria.oliveira@example.com",
+    "password": "hashed_password456",
+    "photo": "https://example.com/images/users/maria.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Carlos Souza",
+    "turma": "Informática 2023",
+    "contact": "carlos.souza@example.com",
+    "address": "Rua das Flores, 789, Rio de Janeiro, RJ",
+    "email": "carlos.souza@example.com",
+    "password": "hashed_password789",
+    "photo": "https://example.com/images/users/carlos.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ana Costa",
+    "turma": "Design 2024",
+    "contact": "ana.costa@example.com",
+    "address": "Praça Verde, 101, Belo Horizonte, MG",
+    "email": "ana.costa@example.com",
+    "password": "hashed_password101",
+    "photo": "https://example.com/images/users/ana.jpg"
+  }
+]
