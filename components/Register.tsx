@@ -17,6 +17,7 @@ export default function Register() {
     username: "",
     nickname: "",
     turma: "",
+    contato: "",
     endereco: "",
     email: "",
     password: "",
@@ -71,8 +72,6 @@ export default function Register() {
                 onChange={handleChange}
                 required
               />
-            </div>
-            <div className="space-y-2">
               <Label htmlFor="turma">Turma</Label>
               <Input
                 className="bg-[#f5e6cb]"
@@ -80,6 +79,17 @@ export default function Register() {
                 name="turma"
                 type="text"
                 value={formData.turma}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="turma">Contato</Label>
+              <Input
+                className="bg-[#f5e6cb]"
+                id="contato"
+                name="contato"
+                type="text"
+                value={formData.contato}
                 onChange={handleChange}
               />
             </div>
