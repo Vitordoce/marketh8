@@ -3,90 +3,110 @@
     "id": 1,
     "name": "Calculadora Científica",
     "price": 50.0,
-    "images": ["https://example.com/images/products/calculadora1.jpg"],
+    "images": ["./data/image.jpg"],
     "condition": "Usado",
     "category": "Eletrônicos",
-    "user_id": 1
+    "user_id": 1,
+    "created_at": "2024-09-10T12:34:56Z",
+    "updated_at": "2024-10-20T15:45:10Z"
   },
   {
     "id": 2,
     "name": "Notebook Dell",
     "price": 2000.0,
-    "images": ["https://example.com/images/products/notebook.jpg"],
+    "images": ["./data/image.jpg"],
     "condition": "Usado",
     "category": "Eletrônicos",
-    "user_id": 1
+    "user_id": 1,
+    "created_at": "2024-08-15T10:12:30Z",
+    "updated_at": "2024-10-01T09:45:00Z"
   },
   {
     "id": 3,
     "name": "Livro de Cálculo",
     "price": 80.0,
-    "images": ["https://example.com/images/products/livro_calculo.jpg"],
+    "images": ["./data/image.jpg"],
     "condition": "Novo",
     "category": "Livros",
-    "user_id": 2
+    "user_id": 2,
+    "created_at": "2024-09-12T11:30:45Z",
+    "updated_at": "2024-09-12T11:30:45Z"
   },
   {
     "id": 4,
     "name": "Mesa de Estudo",
     "price": 150.0,
-    "images": ["https://example.com/images/products/mesa.jpg"],
+    "images": ["./data/image.jpg"],
     "condition": "Usado",
     "category": "Móveis",
-    "user_id": 2
+    "user_id": 2,
+    "created_at": "2024-08-28T09:20:40Z",
+    "updated_at": "2024-10-05T10:25:15Z"
   },
   {
     "id": 5,
     "name": "Mochila Escolar",
     "price": 120.0,
-    "images": ["https://example.com/images/products/mochila.jpg"],
+    "images": ["./data/image.jpg"],
     "condition": "Novo",
     "category": "Acessórios",
-    "user_id": 3
+    "user_id": 3,
+    "created_at": "2024-07-25T08:00:00Z",
+    "updated_at": "2024-09-18T16:00:00Z"
   },
   {
     "id": 6,
     "name": "Tênis Nike",
     "price": 300.0,
-    "images": ["https://example.com/images/products/tenis.jpg"],
+    "images": ["./data/image.jpg"],
     "condition": "Usado",
     "category": "Esportes",
-    "user_id": 3
+    "user_id": 3,
+    "created_at": "2024-09-01T14:30:00Z",
+    "updated_at": "2024-10-22T09:55:30Z"
   },
   {
     "id": 7,
     "name": "Kindle Paperwhite",
     "price": 450.0,
-    "images": ["https://example.com/images/products/kindle.jpg"],
+    "images": ["./data/image.jpg"],
     "condition": "Usado",
     "category": "Eletrônicos",
-    "user_id": 4
+    "user_id": 4,
+    "created_at": "2024-10-10T13:45:00Z",
+    "updated_at": "2024-10-21T11:30:00Z"
   },
   {
     "id": 8,
     "name": "Livro: Design para Todos",
     "price": 60.0,
-    "images": ["https://example.com/images/products/livro_design.jpg"],
+    "images": ["./data/image.jpg"],
     "condition": "Novo",
     "category": "Livros",
-    "user_id": 4
+    "user_id": 4,
+    "created_at": "2024-07-12T10:15:30Z",
+    "updated_at": "2024-08-01T08:30:00Z"
   },
   {
     "id": 9,
     "name": "Cadeira Gamer",
     "price": 700.0,
-    "images": ["https://example.com/images/products/cadeira.jpg"],
+    "images": ["./data/image.jpg", "./data/image.jpg"],
     "condition": "Usado",
     "category": "Móveis",
-    "user_id": 1
+    "user_id": 1,
+    "created_at": "2024-08-20T15:15:00Z",
+    "updated_at": "2024-10-22T14:10:00Z"
   },
   {
     "id": 10,
     "name": "Fone de Ouvido Bluetooth",
     "price": 200.0,
-    "images": ["https://example.com/images/products/fone.jpg"],
+    "images": ["./data/image.jpg", "./data/image.jpg"],
     "condition": "Novo",
     "category": "Eletrônicos",
-    "user_id": 2
+    "user_id": 2,
+    "created_at": "2024-09-30T12:00:00Z",
+    "updated_at": "2024-10-10T12:30:00Z"
   }
 ]

@@ -7,7 +7,10 @@
     "address": "Rua dos Estudantes, 123, São Paulo, SP",
     "email": "joao.silva@example.com",
     "password": "hashed_password123",
-    "photo": "https://example.com/images/users/joao.jpg"
+    "photo": "https://example.com/images/users/joao.jpg",
+    "phone": "+55 11 91234-5678",
+    "created_at": "2024-02-15T10:15:00Z",
+    "updated_at": "2024-10-22T15:30:00Z"
   },
   {
     "id": 2,
@@ -17,7 +20,10 @@
     "address": "Avenida Central, 456, Campinas, SP",
     "email": "maria.oliveira@example.com",
     "password": "hashed_password456",
-    "photo": "https://example.com/images/users/maria.jpg"
+    "photo": "https://example.com/images/users/maria.jpg",
+    "phone": "+55 19 98765-4321",
+    "created_at": "2024-03-10T11:45:00Z",
+    "updated_at": "2024-10-20T09:00:00Z"
   },
   {
     "id": 3,
@@ -27,7 +33,10 @@
     "address": "Rua das Flores, 789, Rio de Janeiro, RJ",
     "email": "carlos.souza@example.com",
     "password": "hashed_password789",
-    "photo": "https://example.com/images/users/carlos.jpg"
+    "photo": "https://example.com/images/users/carlos.jpg",
+    "phone": "+55 21 99876-5432",
+    "created_at": "2024-01-20T09:30:00Z",
+    "updated_at": "2024-10-21T14:15:00Z"
   },
   {
     "id": 4,
@@ -37,6 +46,9 @@
     "address": "Praça Verde, 101, Belo Horizonte, MG",
     "email": "ana.costa@example.com",
     "password": "hashed_password101",
-    "photo": "https://example.com/images/users/ana.jpg"
+    "photo": "https://example.com/images/users/ana.jpg",
+    "phone": "+55 31 93456-7890",
+    "created_at": "2024-05-05T13:00:00Z",
+    "updated_at": "2024-10-23T10:45:00Z"
   }
 ]
