@@ -85,7 +85,6 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                 ))}
             </div>
           </div>
-
           <div className="md:w-1/2">
             <p className="text-[#b85c38] mb-2">{product.category}</p>
             <h1 className="text-3xl font-bold mb-4">{product.name}</h1>

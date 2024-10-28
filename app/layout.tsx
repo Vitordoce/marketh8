@@ -5,6 +5,8 @@ import { Poppins } from "next/font/google";
 //components
 import Header from "@/components/Header";
 
+import { AuthProvider } from "@/hooks/myContext";
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
@@ -21,8 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.className}>
       <body className="bg-[#f5e6cb]">
-        <Header />
-        {children}
+        <AuthProvider>
+          <Header />
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );
