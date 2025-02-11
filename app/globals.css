@@ -73,69 +73,69 @@
 @layer base {
   :root {
     /* Main colors */
-    --primary: 0 48% 89%; /* #FFC7C7 - Soft Pink */
-    --secondary: 0 65% 94%; /* #FFE2E2 - Light Pink */
-    --background: 0 0% 96%; /* #F6F6F6 - Light Gray */
-    --accent: 242 10% 58%; /* #8785A2 - Muted Purple */
+    --primary: 180 84% 44%; /* #08D9D6 - Teal */
+    --secondary: 348 100% 59%; /* #FF2E63 - Red */
+    --background: 0 0% 92%; /* #EAEAEA - Light Grey */
+    --accent: 222 15% 18%; /* #252A34 - Dark Blue/Black */
 
     /* Extended palette */
-    --foreground: 242 15% 20%;
+    --foreground: 222 15% 18%; /* Based on accent */
     --card: 0 0% 100%;
-    --card-foreground: 242 15% 20%;
+    --card-foreground: 222 15% 18%;
     --popover: 0 0% 100%;
-    --popover-foreground: 242 15% 20%;
+    --popover-foreground: 222 15% 18%;
     
     /* Component colors */
-    --primary-foreground: 242 15% 20%;
-    --secondary-foreground: 242 15% 20%;
-    --muted: 242 5% 90%;
-    --muted-foreground: 242 10% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 222 15% 92%;
+    --muted-foreground: 222 15% 40%;
     
     /* Interactive states */
     --accent-foreground: 0 0% 100%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 348 100% 59%; /* Using Red as destructive */
+    --destructive-foreground: 0 0% 100%;
     
     /* Borders and inputs */
-    --border: 242 10% 84%;
-    --input: 242 10% 84%;
-    --ring: 242 10% 58%;
+    --border: 222 15% 84%;
+    --input: 222 15% 84%;
+    --ring: 180 84% 44%; /* Using Teal for focus rings */
     
     /* Chart colors if needed */
-    --chart-1: 0 48% 89%;  /* Based on primary */
-    --chart-2: 0 65% 94%;  /* Based on secondary */
-    --chart-3: 242 10% 58%;  /* Based on accent */
-    --chart-4: 242 15% 75%;
-    --chart-5: 242 20% 65%;
+    --chart-1: 180 84% 44%;  /* Teal */
+    --chart-2: 348 100% 59%;  /* Red */
+    --chart-3: 222 15% 18%;  /* Dark Blue/Black */
+    --chart-4: 0 0% 92%;  /* Grey */
+    --chart-5: 180 84% 35%;  /* Darker Teal */
 
     --radius: 0.5rem;
   }
 
   .dark {
     /* Dark mode variants */
-    --primary: 0 38% 79%;  /* Darker FFC7C7 */
-    --secondary: 0 55% 84%;  /* Darker FFE2E2 */
-    --background: 242 15% 15%;  /* Dark background */
-    --accent: 242 15% 62%;  /* Lighter 8785A2 */
+    --primary: 180 84% 40%;  /* Darker Teal */
+    --secondary: 348 100% 50%;  /* Darker Red */
+    --background: 222 15% 18%;  /* Using accent as background */
+    --accent: 180 84% 44%;  /* Using Teal as accent */
     
-    --foreground: 0 0% 98%;
-    --card: 242 15% 20%;
-    --card-foreground: 0 0% 98%;
-    --popover: 242 15% 20%;
-    --popover-foreground: 0 0% 98%;
+    --foreground: 0 0% 92%;  /* Using grey as text */
+    --card: 222 15% 22%;
+    --card-foreground: 0 0% 92%;
+    --popover: 222 15% 22%;
+    --popover-foreground: 0 0% 92%;
     
-    --primary-foreground: 0 0% 98%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 242 15% 25%;
-    --muted-foreground: 242 10% 70%;
+    --primary-foreground: 0 0% 100%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 222 15% 25%;
+    --muted-foreground: 0 0% 70%;
     
     --accent-foreground: 0 0% 100%;
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 348 100% 45%;
+    --destructive-foreground: 0 0% 100%;
     
-    --border: 242 15% 25%;
-    --input: 242 15% 25%;
-    --ring: 242 15% 62%;
+    --border: 222 15% 25%;
+    --input: 222 15% 25%;
+    --ring: 180 84% 40%;
   }
 }
 
