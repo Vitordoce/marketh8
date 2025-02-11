@@ -40,19 +40,19 @@ export default function Register() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-[#f5e6cb] py-8">
-      <Card className="w-full max-w-md bg-[#e5a17d]">
+    <div className="flex items-center justify-center min-h-screen bg-background py-8">
+      <Card className="w-full max-w-md bg-card">
         <CardHeader>
-          <CardTitle className="text-2xl font-bold text-center">
+          <CardTitle className="text-2xl font-bold text-center text-foreground">
             Cadastro
           </CardTitle>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="username">Usuário</Label>
+              <Label htmlFor="username" className="text-foreground">Usuário</Label>
               <Input
-                className="bg-[#f5e6cb]"
+                className="bg-background"
                 id="username"
                 name="username"
                 type="text"
@@ -62,9 +62,9 @@ export default function Register() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="nickname">Apelido (nome)</Label>
+              <Label htmlFor="nickname" className="text-foreground">Apelido (nome)</Label>
               <Input
-                className="bg-[#f5e6cb]"
+                className="bg-background"
                 id="nickname"
                 name="nickname"
                 type="text"
@@ -72,9 +72,9 @@ export default function Register() {
                 onChange={handleChange}
                 required
               />
-              <Label htmlFor="turma">Turma</Label>
+              <Label htmlFor="turma" className="text-foreground">Turma</Label>
               <Input
-                className="bg-[#f5e6cb]"
+                className="bg-background"
                 id="turma"
                 name="turma"
                 type="text"
@@ -83,9 +83,9 @@ export default function Register() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="turma">Contato</Label>
+              <Label htmlFor="turma" className="text-foreground">Contato</Label>
               <Input
-                className="bg-[#f5e6cb]"
+                className="bg-background"
                 id="contato"
                 name="contato"
                 type="text"
@@ -94,9 +94,9 @@ export default function Register() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="endereco">Endereço</Label>
+              <Label htmlFor="endereco" className="text-foreground">Endereço</Label>
               <Input
-                className="bg-[#f5e6cb]"
+                className="bg-background"
                 id="endereco"
                 name="endereco"
                 type="text"
@@ -105,9 +105,9 @@ export default function Register() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email" className="text-foreground">Email</Label>
               <Input
-                className="bg-[#f5e6cb]"
+                className="bg-background"
                 id="email"
                 name="email"
                 type="email"
@@ -117,9 +117,9 @@ export default function Register() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="password">Senha</Label>
+              <Label htmlFor="password" className="text-foreground">Senha</Label>
               <Input
-                className="bg-[#f5e6cb]"
+                className="bg-background"
                 id="password"
                 name="password"
                 type="password"
@@ -129,9 +129,9 @@ export default function Register() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="confirmPassword">Confirmar Senha</Label>
+              <Label htmlFor="confirmPassword" className="text-foreground">Confirmar Senha</Label>
               <Input
-                className="bg-[#f5e6cb]"
+                className="bg-background"
                 id="confirmPassword"
                 name="confirmPassword"
                 type="password"
@@ -142,16 +142,16 @@ export default function Register() {
             </div>
             <Button
               type="submit"
-              className="w-full bg-[#b85c38] hover:bg-[#a04b2d] text-white"
+              className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
             >
               Cadastrar
             </Button>
           </form>
         </CardContent>
         <CardFooter className="justify-center">
-          <p>
+          <p className="text-muted-foreground">
             Já tem uma conta?{" "}
-            <Link href="/login" className="text-[#b85c38] hover:underline">
+            <Link href="/login" className="text-primary hover:text-primary/70 hover:underline">
               Faça login
             </Link>
           </p>

@@ -23,19 +23,19 @@ export default function Login() {
   };
 
   return (
-    <div className="flex p-10 justify-center items-center min-h-screen bg-[#f5e6cb]">
-      <Card className="bg-[#e5a17d] w-full max-w-md ">
+    <div className="flex p-10 justify-center items-center min-h-screen bg-background">
+      <Card className="w-full max-w-md bg-card">
         <CardHeader>
-          <CardTitle className="text-2xl font-bold text-center">
+          <CardTitle className="text-2xl font-bold text-center text-foreground">
             Login
           </CardTitle>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="username">Usuário</Label>
+              <Label htmlFor="username" className="text-foreground">Usuário</Label>
               <Input
-                className="bg-[#f5e6cb]"
+                className="bg-background"
                 id="username"
                 type="text"
                 value={username}
@@ -44,9 +44,9 @@ export default function Login() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="password">Senha</Label>
+              <Label htmlFor="password" className="text-foreground">Senha</Label>
               <Input
-                className="bg-[#f5e6cb]"
+                className="bg-background"
                 id="password"
                 type="password"
                 value={password}
@@ -56,16 +56,16 @@ export default function Login() {
             </div>
             <Button
               type="submit"
-              className="w-full bg-[#b85c38] hover:bg-[#a04b2d] text-white"
+              className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
             >
               Entrar
             </Button>
           </form>
         </CardContent>
         <CardFooter className="justify-center">
-          <p>
+          <p className="text-muted-foreground">
             Não tem uma conta?{" "}
-            <Link href="/register" className="text-[#b85c38] hover:underline">
+            <Link href="/register" className="text-primary hover:text-primary/70 hover:underline">
               Cadastre-se
             </Link>
           </p>

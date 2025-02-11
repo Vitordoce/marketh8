@@ -15,46 +15,42 @@ const isLoggedIn = false;
 
 export default function Header() {
   return (
-    // mudar cor para variável
-    <header className="bg-[#984830]">
+    <header className="bg-accent">
       <div className="max-w-[1200px] mx-auto p-3 px-8 flex items-center justify-between">
-        {/* Mudar logo */}
         <Link href="/">
-          <div className="text-white text-2xl font-bold border border-white p-2">
+          <div className="text-accent-foreground text-2xl font-bold border border-accent-foreground p-2">
             logo
           </div>
         </Link>
         <nav className="hidden md:flex gap-4">
           <Link
             href="/"
-            className="text-white hover:text-white/70 flex items-center"
+            className="text-accent-foreground hover:text-accent-foreground/70 flex items-center"
           >
             <ShoppingBag className="mr-2" size={20} />
             Comprar
           </Link>
           <Link
             href={isLoggedIn ? "/sell" : "/login"}
-            className="text-white hover:text-white/70 flex items-center"
+            className="text-accent-foreground hover:text-accent-foreground/70 flex items-center"
           >
             <Package className="mr-2" size={20} />
             Vender
           </Link>
           {isLoggedIn && (
-            <>
-              <Link
-                href="/profile"
-                className="text-white hover:text-white/70 flex items-center"
-              >
-                <User className="mr-2" size={20} />
-                Perfil
-              </Link>
-            </>
+            <Link
+              href="/profile"
+              className="text-accent-foreground hover:text-accent-foreground/70 flex items-center"
+            >
+              <User className="mr-2" size={20} />
+              Perfil
+            </Link>
           )}
         </nav>
         <div className="md:hidden flex items-center">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon" className="text-white">
+              <Button variant="ghost" size="icon" className="text-accent-foreground">
                 <Menu className="h-8 w-8" />
                 <span className="sr-only">Abrir menu</span>
               </Button>

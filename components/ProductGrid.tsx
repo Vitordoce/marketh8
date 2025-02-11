@@ -76,17 +76,17 @@ export default function ProductGrid({ products }: ProductGridProps) {
   }, [products, searchTerm, sort, category]);
 
   return (
-    <div className="bg-[#f5e6cb] p-4 space-y-4">
+    <div className="bg-background p-4 space-y-4">
       <div className="flex flex-col sm:flex-row gap-2">
-        <div className="relative flex-grow">
+        <div className="relative grow">
           <Input
             type="text"
             placeholder="Buscar produtos..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#b85c38] focus:border-transparent"
+            className="w-full pl-10 pr-4 py-2 rounded-full border-border focus:ring-2 focus:ring-ring focus:border-transparent"
           />
-          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-5 h-5" />
         </div>
         <Select onValueChange={setSort} value={sort}>
           <SelectTrigger className="w-full sm:w-[180px]">
@@ -105,8 +105,8 @@ export default function ProductGrid({ products }: ProductGridProps) {
         <CategoryTags setCategory={setCategory} selectedCategory={category} />
       </div>
       {filteredAndSortedProducts.length === 0 ? (
-        <div className="bg-[#f5e6cb] flex justify-center p-10">
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">
+        <div className="bg-background flex justify-center p-10">
+          <h2 className="text-xl font-semibold text-foreground mb-2">
             Nenhum produto encontrado
           </h2>
         </div>
@@ -114,8 +114,8 @@ export default function ProductGrid({ products }: ProductGridProps) {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {filteredAndSortedProducts.map((product) => (
             <Link key={product.id} href={`/produto/${product.id}`} passHref>
-              <div className="bg-[#e5a17d] rounded-lg p-4 flex flex-col items-center cursor-pointer hover:shadow-lg transition-shadow duration-300">
-                <div className="w-full aspect-square bg-white rounded-lg mb-2 overflow-hidden">
+              <div className="bg-card text-card-foreground rounded-lg p-4 flex flex-col items-center cursor-pointer hover:shadow-lg transition-shadow duration-300">
+                <div className="w-full aspect-square bg-background rounded-lg mb-2 overflow-hidden">
                   <Image
                     alt={product.name}
                     width={200}
@@ -129,7 +129,7 @@ export default function ProductGrid({ products }: ProductGridProps) {
                 <p className="text-lg font-semibold">
                   R$ {product.price.toFixed(2).replace(".", ",")}
                 </p>
-                <p className="text-sm text-gray-600">{product.condition}</p>
+                <p className="text-sm text-muted-foreground">{product.condition}</p>
               </div>
             </Link>
           ))}

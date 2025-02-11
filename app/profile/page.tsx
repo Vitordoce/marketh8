@@ -39,7 +39,7 @@ export default function ProfilePage() {
 
   return (
     <div className="max-w-[800px] mx-auto p-4">
-      <div className="bg-[#e5a17d] shadow-md rounded-lg p-6 relative">
+      <div className="bg-card text-card-foreground shadow-md rounded-lg p-6 relative">
         <div className="flex flex-col items-center mb-3 sm:flex-row sm:items-start sm:text-left">
           <Image
             alt={userData.name}
@@ -49,7 +49,7 @@ export default function ProfilePage() {
           />
           <div className="text-center sm:text-left">
             <h2 className="text-xl font-semibold">{userData.name}</h2>
-            <p className="text-gray-600">{userData.email}</p>
+            <p className="text-muted-foreground">{userData.email}</p>
           </div>
         </div>
 
@@ -65,6 +65,7 @@ export default function ProfilePage() {
                 value={userData.name}
                 onChange={handleInputChange}
                 placeholder="Nome"
+                className="bg-background"
               />
               <Input
                 type="text"
@@ -72,6 +73,7 @@ export default function ProfilePage() {
                 value={userData.turma}
                 onChange={handleInputChange}
                 placeholder="Turma"
+                className="bg-background"
               />
               <Input
                 type="text"
@@ -79,6 +81,7 @@ export default function ProfilePage() {
                 value={userData.address}
                 onChange={handleInputChange}
                 placeholder="Endereço"
+                className="bg-background"
               />
               <Input
                 type="tel"
@@ -86,16 +89,17 @@ export default function ProfilePage() {
                 value={userData.phone}
                 onChange={handleInputChange}
                 placeholder="Telefone"
+                className="bg-background"
               />
             </div>
             <div className="mt-4 space-y-2 sm:space-y-0 sm:space-x-2 flex flex-col sm:flex-row">
-              <Button type="submit" className="w-full sm:w-auto">
+              <Button type="submit" className="bg-primary text-primary-foreground hover:bg-primary/90">
                 Salvar
               </Button>
               <Button
                 variant="outline"
                 onClick={() => setIsEditing(false)}
-                className="w-full sm:w-auto"
+                className="border-border hover:bg-accent/10"
               >
                 Cancelar
               </Button>
@@ -103,18 +107,18 @@ export default function ProfilePage() {
           </form>
         ) : (
           <div className="space-y-2 text-center sm:text-left">
-            <p>
+            <p className="text-foreground">
               <strong>Turma:</strong> {userData.turma}
             </p>
-            <p>
+            <p className="text-foreground">
               <strong>Endereço:</strong> {userData.address}
             </p>
-            <p>
+            <p className="text-foreground">
               <strong>Telefone:</strong> {userData.phone}
             </p>
             <Button
               onClick={() => setIsEditing(true)}
-              className="w-full sm:w-auto"
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
             >
               Editar Informações
             </Button>
