@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 // Simule um estado de autenticação (substitua isso pela sua lógica de autenticação real)
-const isLoggedIn = true;
+const isLoggedIn = false;
 
 export default function Header() {
   return (

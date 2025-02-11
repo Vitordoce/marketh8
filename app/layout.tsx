@@ -5,7 +5,7 @@ import { Poppins } from "next/font/google";
 //components
 import Header from "@/components/Header";
 
-import { AuthProvider } from "@/hooks/myContext";
+import { AuthProvider } from "@/hooks/authContext";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -22,7 +22,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={poppins.className}>
-      <body className="bg-[#f5e6cb]">
+      <body className="bg-background">
         <AuthProvider>
           <Header />
           {children}
